@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <title>Answers</title>
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Navbar -->
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+      <a class="navbar-brand" href="/home"
+        ><b style="font-style: italic; font-weight: bolder; font-size: 30px;"
+          ><b style="color: blue;">D</b>-<b style="color: chartreuse;">F</b
+          ><b style="color: chocolate;">o</b><b style="color: chocolate;">r</b
+          ><b style="color: yellow;">u</b><b style="color: chartreuse;">m</b></b
+        ></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent-333"
+        aria-controls="navbarSupportedContent-333"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"></li>
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+                <a
+                  class="nav-link waves-effect waves-light"
+                  href="/home"
+                  title="Back"
+                >
+                <i class="fas fa-angle-double-left fa-2x" title="Back"></i>
+                </a>
+              </li>
+          <li class="nav-item">
+            <a
+              class="nav-link waves-effect waves-light"
+              href="/add-question"
+              title="Add Question"
+            >
+              <i class="fas fa-plus fa-2x" id="add"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDropdownMenuLink-333"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user"></i>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right dropdown-default"
+              aria-labelledby="navbarDropdownMenuLink-333"
+            >
+              <a href=""> My profile </a>
+              <a href=""> Log Out </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+     <br>
+    <h3 style="font-weight: bolder;">Question</h3> <b style="color: red; font-size: 25px;"> <%= subject %> </b> 
+        <%= question %>
+    <div class="jumbotron text-center" style="background-color: rgb(243, 243, 217); box-shadow: 0 5px 5px 5px grey;">
+       <%= known_answer %> 
+    </div>
+  <!-- Jumbotron --> 
+    <h2> Answers</h2>
+    <% answers.forEach(function(result){ %>
+    <div class="jumbotron text-center" style="background-color: rgb(207, 240, 207); box-shadow: 0 5px 5px 5px grey;">
+    <pre><code class="language-pascal">
+     <%= result.given_answer %></code></pre>
+    </div>  
+     <% }); %>
+
+    </div>
+
+    
+
+        
+
+
+
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"
+    ></script>
+  </body>
+</html>

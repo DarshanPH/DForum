@@ -1,0 +1,264 @@
+<html>
+    <head>
+        <title>
+            Home
+        </title>
+    </head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+    <a class="navbar-brand" href="#">Welcome To <b style="font-style: italic; font-weight: bolder; font-size: 30px;"><b style="color: blue;">D</b>-<b style="color: chartreuse;">F</b><b style="color: chocolate;">o</b><b style="color: chocolate;">r</b><b style="color: yellow;">u</b><b style="color: chartreuse;">m</b></b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-default"
+            aria-labelledby="navbarDropdownMenuLink-333">
+            <a class="dropdown-item" href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#signin">Sign In</a>
+            <a class="dropdown-item" href="" data-target="#signup" data-toggle="modal" class="btn btn-default btn-rounded my-3">Register</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <form action="/home" method="POST">
+  <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header light-blue darken-3 white-text">
+        <h4 class="title"><i class="fas fa-pencil-alt"></i> Sign In </h4>
+      </div>
+      <!--Body-->
+      <div class="modal-body mb-0">
+        <div class="md-form form-sm">
+          <i class="fas fa-envelope prefix active"></i>
+          <input type="text" name="name" class="form-control" required>
+          <label for="form8" class="active">Your name</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fas fa-lock prefix active"></i>
+          <input type="email" name="email" id="form9" class="form-control" required>
+          <label for="form9" class="active">Your email</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fas fa-tag prefix"></i>
+          <input type="password" id="form-autocomplete-2" name="password" class="form-control mdb-autocomplete" required>
+          <label for="form-autocomplete-2"  class="active">Password</label>
+        </div>
+        <div class="text-center mt-1-half">
+          <button class="btn btn-info mb-2 waves-effect waves-light">Send <i class="fas fa-send ml-1"></i></button>
+        </div>
+  </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+  </form>
+
+<form action="/register" method="POST">
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header light-blue darken-3 white-text">
+        <h4 class="title"><i class="fas fa-pencil-alt"></i> Sign Up Here </h4>
+      </div>
+      <!--Body-->
+      <div class="modal-body mb-0">
+        <div class="md-form form-sm">
+          <i class="fas fa-envelope prefix active"></i>
+          <input type="text" name="name" class="form-control" required>
+          <label for="form8" class="active">Your name</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fas fa-tag prefix"></i>
+          <input type="text" id="form-autocomplete-2" name="subject" class="form-control mdb-autocomplete" required>
+          <label for="form-autocomplete-2"  class="active">Subject</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fas fa-lock prefix active"></i>
+          <input type="email" name="email" id="form9" class="form-control" required>
+          <label for="form9" class="active">Your email</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fas fa-lock prefix active"></i>
+          <input type="number" name="mblnumber" id="form9" class="form-control" required>
+          <label for="form9" class="active">Mobile Number</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fas fa-tag prefix"></i>
+          <input type="password" id="form-autocomplete-2" name="password" class="form-control mdb-autocomplete" required>
+          <label for="form-autocomplete-2"  class="active">Password</label>
+        </div>
+        <div class="text-center mt-1-half">
+          <button class="btn btn-info mb-2 waves-effect waves-light">Send <i class="fas fa-send ml-1"></i></button>
+        </div>
+  </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+</form>
+
+
+
+<br>
+<!--/.Carousel Wrapper-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+          alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Tell your Error or question Here</h3>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+          alt="Second slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive"> Answer to the question </h3>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+          alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">View All answers</h3>
+        <p></p>
+      </div>
+    </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+</div>
+    </div>
+    <div class="col-md-4 text-center" style="margin-top: 6%;"> Reading a book does not make an man perfect, Teacher should not make everyone expert. The everyone do not know everything. The somone know something that other does not know, thats the reason for creating this Forum. We will together become perfect. There is a success waiting for you</div> 
+  </div>
+</div>
+<br>    
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 text-center" style="margin-top: 5%;"> 
+      <h2> About </h2>
+      Fully open source web application, Before jump in to actal Forum there is an sign process exist like all the standard websites have. In here you have to give username, password, email, mobilenumber we should not save or reveal anything to others 
+      <a  href="" data-target="#signup" data-toggle="modal" class="btn btn-success">Get Started</a>
+    </div>
+    <div class="col-md-8">
+      <img width="100%" height="350" src="https://images.pexels.com/photos/34601/pexels-photo.jpg?cs=srgb&dl=coffee-notebook-writing-computer-34601.jpg&fm=jpg" alt="Forum" >
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm text-center" style="box-shadow: 0 3px 3px 3px rgb(179, 177, 177);">
+      <h3> Resource </h3>
+      <i class="fas fa-info fa-3x cyan-text pr-3"></i><br>
+      We use <b>node</b> js for backend. The Node js is open source server side environment. It is runs on various platforms such as Windows, Linux, unix, Macos, etc.
+      The HTML and CSS is used for front end. In many places i used <b>md bootstrap</b> as front end. This Forum stores its all data into <b>MongoDB database.</b>
+    </div>
+    <div class="col-sm text-center" style="box-shadow: 0 3px 3px 3px rgb(179, 177, 177);">
+      <h3> Applications </h3>
+      <i class="far fa-clipboard fa-3x cyan-text pr-3"></i><br>
+      <b>Light Weight:</b> It is developed by using node js. The javascript is run on the browser itself so it is very lightweight to the server, and it will launch or load like a rocket.
+      <br><b> Easy to use: </b> Every options which are all availaible in this forum is easy to find and easy to use
+      <br><b> Very Responsive </b> It can easily adjust any size of the screen
+    </div>
+    <div class="col-sm text-center" style="box-shadow: 0 3px 3px 3px rgb(179, 177, 177);">
+     <h3> Template I Used </h3>
+     <i class="fas fa-desktop fa-3x cyan-text pr-3"></i><br><br>
+      I used ejs template for this project. EJS stands for embended javascript. It is better because it work on both server side and client side like flask. I think this is better to use when we developing a web project using node js. 
+    </div>
+  </div>
+</div>
+
+
+
+
+<footer class="page-footer font-small blue" style="margin-top: 2%;">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href=""> Devoloped By: Darshan Hegde</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+    </body>
+</html>

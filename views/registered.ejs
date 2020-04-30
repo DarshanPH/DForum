@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>
+            Home
+        </title>
+    </head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+    <a class="navbar-brand" href="#">Welcome To <b style="font-style: italic; font-weight: bolder; font-size: 30px;"><b style="color: blue;">D</b>-<b style="color: chartreuse;">F</b><b style="color: chocolate;">o</b><b style="color: chocolate;">r</b><b style="color: yellow;">u</b><b style="color: chartreuse;">m</b></b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-default"
+            aria-labelledby="navbarDropdownMenuLink-333">
+            <a class="dropdown-item" href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#signin">Sign In</a>
+            <a class="dropdown-item" href="" data-target="#signup" data-toggle="modal" class="btn btn-default btn-rounded my-3">Register</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <form action="/home" method="POST">
+  <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header light-blue darken-3 white-text">
+        <h4 class="title"><i class="fas fa-pencil-alt"></i> Sign In </h4>
+      </div>
+      <!--Body-->
+      <div class="modal-body mb-0">
+        <div class="md-form form-sm">
+          <i class="fas fa-envelope prefix active"></i>
+          <input type="text" name="name" class="form-control">
+          <label for="form8" class="active">Your name</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fas fa-lock prefix active"></i>
+          <input type="email" name="email" id="form9" class="form-control">
+          <label for="form9" class="active">Your email</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fas fa-tag prefix"></i>
+          <input type="password" id="form-autocomplete-2" name="password" class="form-control mdb-autocomplete">
+          <label for="form-autocomplete-2"  class="active">Password</label>
+        </div>
+        <div class="text-center mt-1-half">
+          <button class="btn btn-info mb-2 waves-effect waves-light">Send <i class="fas fa-send ml-1"></i></button>
+        </div>
+  </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+  </form>
+
+<form action="" method="POST">
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header light-blue darken-3 white-text">
+        <h4 class="title"><i class="fas fa-pencil-alt"></i> Sign Up Here </h4>
+      </div>
+      <!--Body-->
+      <div class="modal-body mb-0">
+        <div class="md-form form-sm">
+          <i class="fas fa-envelope prefix active"></i>
+          <input type="text" name="name" class="form-control">
+          <label for="form8" class="active">Your name</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fas fa-tag prefix"></i>
+          <input type="text" id="form-autocomplete-2" name="subject" class="form-control mdb-autocomplete">
+          <label for="form-autocomplete-2"  class="active">Subject</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fas fa-lock prefix active"></i>
+          <input type="email" name="email" id="form9" class="form-control">
+          <label for="form9" class="active">Your email</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fas fa-lock prefix active"></i>
+          <input type="number" name="mblnumber" id="form9" class="form-control">
+          <label for="form9" class="active">Mobile Number</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fas fa-tag prefix"></i>
+          <input type="password" id="form-autocomplete-2" name="password" class="form-control mdb-autocomplete">
+          <label for="form-autocomplete-2"  class="active">Password</label>
+        </div>
+        <div class="text-center mt-1-half">
+          <button class="btn btn-info mb-2 waves-effect waves-light">Send <i class="fas fa-send ml-1"></i></button>
+        </div>
+  </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+</form>
+
+<a class="dropdown-item" href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#signin">Clik Here To Sign In</a>
+
+
+
+    
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+    </body>
+</html>

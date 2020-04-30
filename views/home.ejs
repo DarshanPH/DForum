@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>
+            Home
+        </title>
+    </head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+
+
+
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+    <a class="navbar-brand" href="/home"><b style="font-style: italic; font-weight: bolder; font-size: 30px;"><b style="color: blue;">D</b>-<b style="color: chartreuse;">F</b><b style="color: chocolate;">o</b><b style="color: chocolate;">r</b><b style="color: yellow;">u</b><b style="color: chartreuse;">m</b></b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" href="/add-question" title="Add Question">
+                <i class="fas fa-plus fa-2x" id="add"></i>
+            </a>
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-default"
+            aria-labelledby="navbarDropdownMenuLink-333">
+            <a href=""> My profile </a>
+            <a href="/logout"> Log Out </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+ 
+<% allresult.forEach(function(result){ %>
+
+  <!-- News jumbotron -->
+<div class="jumbotron text-center hoverable p-4">
+
+    <!-- Grid row -->
+    <div class="row">
+  
+      <!-- Grid column -->
+      <div class="col-md-4 offset-md-1 mx-3 my-3">
+  
+        <!-- Featured image -->
+        <div class="view overlay">
+          <img src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" class="img-fluid" alt="Sample image for first version of blog listing">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-md-7 text-md-left ml-3 mt-3">
+  
+        <!-- Excerpt -->
+        <a href="#!" class="green-text">
+          <h6 class="h6 pb-1"><i class="fas fa-desktop pr-1"></i> Problem </h6>
+        </a>
+  
+        <h4 class="h4 mb-4"> Subject: <%= result.subject %> </h4>
+  
+        <p class="font-weight-normal"><b>Question: <%= result.question%></b></p>
+        <p class="font-weight-normal"><b>Person Knows:</b> <%= result.shared %></p>
+        <p class="font-weight-normal"><a><strong>Last Date</strong></a>, 1/5/2020</p>
+      
+        <form action="" method="POST">
+        <div class="form-row mb-4">
+            <div class="col">
+              <input type="hidden" name="question" id="" value="<%= result.question %>">
+              <input type="hidden" name="known_answer" value="<%= result.shared %>">
+              <input type="hidden" name="subject" id="" value="<%= result.subject %>">
+                <div class="form-group shadow-textarea">
+                    <textarea class="form-control z-depth-1" name="given_answer" id="exampleFormControlTextarea6" rows="3" placeholder="Write your answer here....."></textarea>
+                  </div>    
+            </div>
+            <div class="col">
+                <input type="submit" class="btn btn-dark-green" title="POST">
+              
+            </div>
+        </div>
+      </form>
+      <form action="/answers" method="POST">
+        <input type="hidden" name="question" id="" value="<%= result.question %>">
+        <input type="hidden" name="known_answer" value="<%= result.shared %>">
+        <input type="hidden" name="subject" id="" value="<%= result.subject %>">
+        <input type="hidden" value="<%= result.question %>" name="answer">
+        <button class="link"> View all answers </button>
+      </form>
+      </div>  
+    </div>
+  </div>
+
+
+
+<h3><%= result.name %></h3>
+
+<% }); %>
+    
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+    </body>
+</html>
